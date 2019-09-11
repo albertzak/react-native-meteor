@@ -26,26 +26,26 @@
   },
   "homepage": "https://github.com/xvonabur/react-native-meteor#readme",
   "dependencies": {
-    "@xvonabur/minimongo-cache": "^0.1.2",
     "@react-native-community/netinfo": "^4.2.1",
+    "@xvonabur/minimongo-cache": "^0.1.2",
     "base-64": "^0.1.0  ",
     "crypto-js": "^3.1.9-1",
-    "ejson": "^2.1.2",
+    "ejson": "^2.2.0",
     "trackr": "^2.0.2",
-    "wolfy87-eventemitter": "^5.2.4"
+    "wolfy87-eventemitter": "^5.2.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.0",
-    "@babel/register": "^7.4.0",
-    "@babel/runtime": "^7.4.0",
-    "@sentry/cli": "^1.41.0",
-    "babel-eslint": "^10.0.1",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
+    "@sentry/cli": "^1.47.1",
+    "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
     "metro-react-native-babel-preset": "^0.53.1",
-    "mocha": "^6.1.0",
-    "mock-socket": "^8.0.0",
-    "sinon": "^7.3.0"
+    "mocha": "^6.2.0",
+    "mock-socket": "^8.1.1",
+    "sinon": "^7.4.2"
   },
   "peerDependencies": {
     "react": "*",
