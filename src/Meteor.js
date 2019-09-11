@@ -18,7 +18,7 @@ import Accounts from './user/Accounts';
 
 let NetInfo;
 if (isReactNative) {
-    NetInfo = require('react-native').NetInfo;  // eslint-disable-line
+    NetInfo = require('@react-native-community/netinfo');  // eslint-disable-line
 }
 
 
