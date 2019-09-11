@@ -1,7 +1,6 @@
+# @albertzak/react-native-meteor
 
-
-# @xvonabur/react-native-meteor
- [![react-native-meteor](http://img.shields.io/npm/dm/@xvonabur/react-native-meteor.svg)](https://www.npmjs.org/package/@xvonabur/react-native-meteor) [![npm version](https://badge.fury.io/js/%40xvonabur%2Freact-native-meteor.svg)](https://badge.fury.io/js/%40xvonabur%2Freact-native-meteor) [![Dependency Status](https://david-dm.org/xvonabur/react-native-meteor/status.svg)](https://david-dm.org/xvonabur/react-native-meteor)
+Forked from @xvonabur
 
  This project was adapted from [react-native-meteor](https://github.com/inProgress-team/react-native-meteor) by inProgress Team to be more up to date and focused. This documentation has been revised to be more coherent, dependencies have been updated, and the API has been brought more in-line with Meteor.
 
@@ -9,7 +8,7 @@
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [@xvonabur/react-native-meteor](#xvonaburreact-native-meteor)
+- [@albertzak/react-native-meteor](#albertzakreact-native-meteor)
   - [Supporting The Project](#supporting-the-project)
   - [Installation And Setup](#installation-and-setup)
     - [Android](#android)
@@ -35,7 +34,7 @@
 ## Installation And Setup
 
 ```sh
-$ npm i --save @xvonabur/react-native-meteor
+$ npm i --save @albertzak/react-native-meteor
 ```
 
 ### Android
@@ -113,9 +112,9 @@ These variables can be used inside `withTracker`. They will be populated into yo
 * [Meteor.subscribe()](http://docs.meteor.com/#/full/meteor_subscribe)
 
 ```javascript
-import Meteor, { Tracker } from '@xvonabur/react-native-meteor';
+import Meteor, { Tracker } from '@albertzak/react-native-meteor';
 
-const handle = Meteor.subscribe('xvonabur.friends');
+const handle = Meteor.subscribe('albertzak.friends');
 
 Tracker.autorun(() =>{
     if(handle.ready()){
@@ -137,7 +136,7 @@ These methods work offline. That means that elements are correctly updated offli
 You need pass the `cursoredFind` option when you get your collection if you want to use cursor-like method:
 
 ```javascript
-import { Mongo } from '@xvonabur/react-native-meteor';
+import { Mongo } from '@albertzak/react-native-meteor';
 
 new Mongo.Collection("collectionName", { cursoredFind: true });
 ```
