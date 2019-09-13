@@ -102,7 +102,7 @@ class MeteorDataManager {
 }
 
 export const ReactMeteorData = {
-    componentWillMount() {
+    componentDidMount() {
         Data.waitDdpReady(()=>{
             this.data = {};
             this._meteorDataManager = new MeteorDataManager(this);
@@ -111,7 +111,7 @@ export const ReactMeteorData = {
         });
     },
 
-    componentWillUpdate(nextProps, nextState) {
+    componentDidUpdate(nextProps, nextState) {
         const saveProps = this.props;
         const saveState = this.state;
         let newData;
@@ -125,13 +125,17 @@ export const ReactMeteorData = {
             // See https://github.com/facebook/react/issues/3398.
             this.props = nextProps;
             this.state = nextState;
-            newData = this._meteorDataManager.calculateData();
+            if (this._meteorDataManager) {
+                newData = this._meteorDataManager.calculateData();
+            }
         } finally {
             this.props = saveProps;
             this.state = saveState;
         }
 
-        this._meteorDataManager.updateData(newData);
+        if (this._meteorDataManager) {
+            this._meteorDataManager.updateData(newData);
+        }
     },
 
     componentWillUnmount() {
